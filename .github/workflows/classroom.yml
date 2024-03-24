@@ -1,14 +1,13 @@
-name: learn-github-actions
-run-name: ${{ github.actor }} is learning GitHub Actions
-on: [push]
+name: Autograding Tests
+'on':
+- push
+- workflow_dispatch
+- repository_dispatch
+permissions:
+  checks: write
+  actions: read
+  contents: read
 jobs:
-  check-gcc-version:
-    # runs-on: ubuntu-latest
+  run-autograding-tests:
+    #runs-on: ubuntu-latest
     runs-on: self-hosted
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '14'
-      # - run: npm install -g bats
-      - run: g++ -v
