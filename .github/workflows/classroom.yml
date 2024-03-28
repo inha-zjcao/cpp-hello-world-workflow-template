@@ -9,5 +9,36 @@ permissions:
   contents: read
 jobs:
   run-autograding-tests:
-    #runs-on: ubuntu-latest
+    # runs-on: ubuntu-latest
     runs-on: self-hosted
+    if: github.actor != 'github-classroom[bot]'
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - name: week01_quiz01_score01
+      id: week01_quiz01_score01
+      uses: education/autograding-command-grader@v1
+      with:
+        test-name: week01_quiz01_score01
+        setup-command: ''
+        command: python /home/zjcao/actions-runner/_work/eval_py/week01/week01_quiz01_score01.py
+          main.cpp
+        timeout: 10
+        max-score: 5
+    - name: week01_quiz01-score02
+      id: week01_quiz01-score02
+      uses: education/autograding-command-grader@v1
+      with:
+        test-name: week01_quiz01-score02
+        setup-command: ''
+        command: python /home/zjcao/actions-runner/_work/eval_py/week01/week01_quiz01_score02.py
+          main.cpp
+        timeout: 10
+        max-score: 5
+    - name: Autograding Reporter
+      uses: education/autograding-grading-reporter@v1
+      env:
+        WEEK01_QUIZ01_SCORE01_RESULTS: "${{steps.week01_quiz01_score01.outputs.result}}"
+        WEEK01_QUIZ01-SCORE02_RESULTS: "${{steps.week01_quiz01-score02.outputs.result}}"
+      with:
+        runners: week01_quiz01_score01,week01_quiz01-score02
