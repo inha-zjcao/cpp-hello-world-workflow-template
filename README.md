@@ -213,6 +213,7 @@ int main(){
 ### 4. Check results.
 
 ![alt text](.imgs/score.png)
+<img src=".imgs/score.png">
 
 ## Ref.
 
