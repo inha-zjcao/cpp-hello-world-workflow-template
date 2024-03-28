@@ -216,5 +216,11 @@ int main(){
 
 ![alt text](.imgs/score.png)
 
+## Ref.
 
-> 2024.03.20
+Ref-1: https://github.com/orgs/community/discussions/68249 \
+Ref-2: https://mti-lab.github.io/blog/2021/12/15/autograding.html
+
+
+> Autor: czjing \
+Last edited: 2024.03.28
