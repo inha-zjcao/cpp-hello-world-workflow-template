@@ -191,7 +191,7 @@ jobs:
         runners: week01_quiz01_score01,week01_quiz01-score02
 ```
 
-### 4. `Mian.cpp`
+### 3. `Mian.cpp`
 
 ```cpp
 #include <iostream>
@@ -210,7 +210,7 @@ int main(){
 ```
 
 
-### 5. Check results.
+### 4. Check results.
 
 ![alt text](.imgs/score.png)
 
