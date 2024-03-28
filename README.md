@@ -1,7 +1,5 @@
 # Week-01_Quiz01_Hello-World_Demo
 
-Source code: [https://github.com/inha-zjcao/github-classrooms-cpp-helloworld-autograding-template](https://github.com/inha-zjcao/github-classrooms-cpp-helloworld-autograding-template)
-
  - A classroom demo (hello world).
  - Autograding
  - self-hosted
@@ -223,7 +221,9 @@ Ref-1: https://github.com/orgs/community/discussions/68249 \
 Ref-2: https://mti-lab.github.io/blog/2021/12/15/autograding.html
 
 
-
-
 > Autor: czjing \
 Last edited: 2024.03.28
+
+Source code: [https://github.com/inha-zjcao/github-classrooms-cpp-helloworld-autograding-template](https://github.com/inha-zjcao/github-classrooms-cpp-helloworld-autograding-template)
+
+
