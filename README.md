@@ -213,7 +213,7 @@ int main(){
 ### 4. Check results.
 
 ![alt text](.imgs/score.png)
-<img src="https://github.com/inha-zjcao/cpp-hello-world-workflow-template/.imgs/score.png", alt="score.png">
+<img src="https://github.com/inha-zjcao/cpp-hello-world-workflow-template/blob/main/.imgs/score.png", alt="score.png">
 
 ## Ref.
 
