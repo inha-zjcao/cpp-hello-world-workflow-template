@@ -5,7 +5,7 @@
  - self-hosted
  - python-based `main.cpp` autograding.
 
-## 1. Week01_Quiz01
+## 1. Week01-Quiz01-HelloWorld
 
 ### 1.1. Requirement
 
@@ -211,7 +211,6 @@ int main(){
 
 
 ### 5. Check results.
-
 
 ![alt text](.imgs/score.png)
 
