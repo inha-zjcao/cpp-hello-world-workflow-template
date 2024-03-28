@@ -98,7 +98,6 @@ def runing(args):
     # ------------
     # define input & get return.
     output, error = run_jobs(cmd="./a.out", cmd_inputs=args.cmd_input)
-    print(output)
 
     assert gcc_error == "", "### output error (./a.out)."
 
