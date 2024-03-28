@@ -1,9 +1,9 @@
 #include <iostream>
-using namespace std;
-int main()
-{
-    
 
+using namespace std;
+
+int main(){
+    
     string name;
     cin >> name;
 
@@ -11,4 +11,3 @@ int main()
 
     return 0;
 }
-
