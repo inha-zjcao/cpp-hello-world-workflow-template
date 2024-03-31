@@ -1,33 +1,37 @@
-# Week-01_Quiz01_Hello-World_Demo
+# Github Classrooms `main.cpp` Autograding Template
 
  - A classroom demo (hello world).
  - Autograding
- - self-hosted
- - python-based `main.cpp` autograding.
+ - Self-hosted
+ - Python-based `main.cpp` autograding.
 
-## 1. Week01-Quiz01-HelloWorld
+> Source code: [https://github.com/inha-zjcao/github-classrooms-cpp-helloworld-autograding-template](https://github.com/inha-zjcao/github-classrooms-cpp-helloworld-autograding-template)
 
-### 1.1. Requirement
+## 1. Week-01 quiz-01 helloWorld.
+
+### 1.1. Requirement.
 
 - You must complete the code in C++. 
 
 - Note that the inputs and outputs must match the following example.
 
-### 1.2. Example
+### 1.2. Example.
+
+> Week-01 quiz01 Hello World demo
 
 **Example 1:**
 
-input: `frank`
+Input: `frank`
 
-output: `Hello frank!`
+Output: `Hello frank!`
 
 **Example 2:**
 
-input: `world`
+Input: `world`
 
-output: `Hello world!`
+Output: `Hello world!`
 
-### 1.3. others
+### 1.3. Others.
 
 None.
 
@@ -39,14 +43,11 @@ None.
 ```python
 """
 Python-based `main.cpp` Autograding 
-Author: czjing
+Code: czjing
 Data: 2024.03.28
 """
 
-"""
-test main.cpp
-"""
-
+# week01_quiz01_score01.py
 import subprocess
 import argparse
 
@@ -79,7 +80,6 @@ def runing(args):
     assert gcc_error == "", "### compile error (g++ main.cpp)."
     # ------------
   
-
     # ------------
     ## demo: sum
     # input
@@ -94,7 +94,6 @@ def runing(args):
     # assert output == "2\n", "### output error (./a.out)."
     # ------------
 
-
     # ------------
     # define input & get return.
     output, error = run_jobs(cmd="./a.out", cmd_inputs=args.cmd_input)
@@ -104,7 +103,6 @@ def runing(args):
     # match.
     assert output == args.cmd_output, "### output error (./a.out)."
     # ------------
-
 
 
 if __name__ == '__main__':
@@ -122,8 +120,6 @@ if __name__ == '__main__':
 
     # print(args)
     runing(args)
-
-
 ```
 
 
@@ -141,8 +137,9 @@ total 8.0K
 
 ### 2.3. Create `.github/workflows/classroom.yml` in template repository. 
 
-> Do not use the GitHub Classroom Assignment UI to set Autograding. You need to define `.github/workflows/classroom.yml` workflow file in the template repo.\
-> ref: https://github.com/orgs/community/discussions/68249
+- Do not use the GitHub Classroom Assignment UI to set Autograding. 
+- You need to define `.github/workflows/classroom.yml` workflow file in the template repo.
+- ref: https://github.com/orgs/community/discussions/68249
 
 ```yml
 name: Autograding Tests
@@ -191,15 +188,15 @@ jobs:
         runners: week01_quiz01_score01,week01_quiz01-score02
 ```
 
-### 3. `Mian.cpp`
+### 3. Upload `mian.cpp` to repository.
 
 ```cpp
+// mian.cpp
 #include <iostream>
 
 using namespace std;
 
 int main(){
-
     string name;
     cin >> name;
 
@@ -222,8 +219,7 @@ Ref-2: https://mti-lab.github.io/blog/2021/12/15/autograding.html
 
 
 > Autor: czjing \
-Last edited: 2024.03.28
+[![Updated Badge](https://badges.pufler.dev/updated/inha-zjcao/github-classrooms-cpp-helloworld-autograding-template)](https://badges.pufler.dev) [![Visits Badge](https://badges.pufler.dev/visits/inha-zjcao/github-classrooms-cpp-helloworld-autograding-template)](https://badges.pufler.dev)
 
-Source code: [https://github.com/inha-zjcao/github-classrooms-cpp-helloworld-autograding-template](https://github.com/inha-zjcao/github-classrooms-cpp-helloworld-autograding-template)
 
 
