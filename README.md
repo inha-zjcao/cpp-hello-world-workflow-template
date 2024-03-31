@@ -17,7 +17,7 @@
 
 ### 1.2. Example.
 
-> Week-01 quiz01 Hello World demo
+> Week01 quiz01 _Hello World_ demo
 
 **Example 1:**
 
@@ -142,6 +142,7 @@ total 8.0K
 - ref: https://github.com/orgs/community/discussions/68249
 
 ```yml
+# .github/workflows/classroom.yml
 name: Autograding Tests
 'on':
 - push
